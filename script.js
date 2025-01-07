@@ -1,3 +1,5 @@
-document.querySelector('#hamburger').addEventListener('click', () => {
-    console.log('Hamburger clicked');
+let ham= document.querySelector('#hamburger');
+let navlist= document.querySelector('#nav-list');
+ham.addEventListener('click',()=>{
+    navlist.classList.toggle('active');
 });

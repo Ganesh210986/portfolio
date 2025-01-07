@@ -23,11 +23,13 @@
     justify-content: flex-end;
     background-color: rgb(249, 246, 246);
     width: 80%;
+    margin-left: auto;
     
 }
-img{
+.logo{
     height: 45px;
     width: 45px;
+    margin: auto;
 }
 .nav-list{
     display: flex;
@@ -50,16 +52,6 @@ img{
 .btn:hover{
     background-color: green;
 }
-@media (width < 600px){
-    .nav-list{
-        display: none;
-    }
-@media (width > 600px){
-    .hamburger{
-        display: flex;
-    }
-   
-}
 .hamburger{
     display: flex;
     flex-direction: column;
@@ -72,3 +64,134 @@ img{
     background-color: black;
     margin: 5px;
 }
+.hero-lander{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%;
+    background-color: rgb(238, 236, 234);
+    height: auto;
+    gap: 80px;
+    
+    
+}
+.hero-lander>.left{
+    background-color: rgba(255, 255, 255, 0);
+    width: 50%;
+    gap: 80px;
+    
+}
+
+.hero-lander>.right{
+    background-color: rgba(255, 255, 255, 0);
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.main-heading{
+    font-size: 40px;
+    color: black;
+
+}
+.sub-heading{
+    font-size: 20px;
+    color: black;
+}
+.contact-btn{
+    background-color: rgb(36, 36, 135);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0);
+    padding: 0.1 rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 3rem;
+    height: 3rem;
+    width: 8rem;
+    color: white;
+}
+.pat{
+    height: auto;
+    width: 50vw;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px;
+
+}
+.skills{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    object-fit: cover;
+}
+.skill-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction:row;
+    gap: 20px;
+    justify-content: center;
+
+}
+.btn1{
+    background-color: rgb(36, 36, 135);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0);
+    padding: 0.1 rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 3rem;
+    height: 3rem;
+    width: 12rem;
+    color: white;
+}
+.btn1:hover{
+    background-color: green;
+}
+
+@media (width < 700px){
+    .nav-list{
+        display: none;
+    }
+    .nav-list.active{
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: rgb(249, 246, 246);
+        width: 100%;
+        padding: 3rem 0;
+      
+
+
+    }
+
+@media (width < 700px){
+    .hamburger{
+        display: absolute;
+        z-index: 2;
+
+    }
+    
+}
+
