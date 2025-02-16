@@ -127,13 +127,15 @@
     gap: 20px;
     justify-content: center;
     align-items: center;
+    height: max-content;
 }
 .skill{
     display: flex;
-    flex-direction: column;
     align-items: center;
     gap: 10px;
-    object-fit: cover;
+    height:150px;
+    background-color: aqua;
+  
 }
 .skill-list{
     display: flex;
